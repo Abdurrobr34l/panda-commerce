@@ -1,0 +1,21 @@
+h1,
+h2,
+h3 {
+  // font-family: $font-poppins;
+  font-weight: 600;
+  color: $heading-clr;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+p {
+  // font-family: $font-inter;
+  font-weight: 400;
+  color: $text-clr;
+}
+
+input::placeholder {
+  color: $placeholder-clr;
+}

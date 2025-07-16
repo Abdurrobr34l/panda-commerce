@@ -1,0 +1,21 @@
+.btn {  
+  display: inline-block;
+  // font-family: $font-inter;
+  font-weight: 500;
+  padding: 16px 26px 16px 26px;
+  background: $btn-bg-clr;
+  color: $white-clr;
+  border-radius: 6px;
+
+  &:hover {
+    background: $btn-hover-clr;
+  }
+}
+.btn-black {
+  background: $black-clr;
+  transition: all 0.33s ease-in-out;
+
+  &:hover {
+  background: $heading-clr;
+  }
+}

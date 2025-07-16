@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Helvetica Neue", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+  color: #4E4E4E;
+}
+
+input::placeholder {
+  color: #cccccc;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  padding: 16px 26px 16px 26px;
+  background: linear-gradient(180deg, rgb(255, 88, 155) -0.006%, rgb(255, 19, 111) 99.994%);
+  color: #ffffff;
+  border-radius: 6px;
+}
+.btn:hover {
+  background: linear-gradient(180deg, #ff136f -0.006%, #ff589b 99.994%);
+}
+
+.btn-black {
+  background: #000000;
+  transition: all 0.33s ease-in-out;
+}
+.btn-black:hover {
+  background: #1f1f1f;
+}
+
+.container {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1536px;
+}
+
+.w-88 {
+  width: 88%;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

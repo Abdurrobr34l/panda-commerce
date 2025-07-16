@@ -1,0 +1,33 @@
+/* For small mobile devices (up to 375px) */
+@media (width <= 375px) {
+  /* Styles for 375px and smaller screens */
+}
+
+/* For mobile devices between 376px and 576px */
+@media (375px < width <= 576px) {
+  /* Styles for screens between 376px and 576px */
+}
+
+/* For tablets between 577px and 768px */
+@media (576px < width <= 768px) {
+  /* Styles for screens between 577px and 768px */
+}
+
+/* For tablets and small desktops between 769px and 1024px */
+@media (768px < width <= 1024px) {
+  /* Styles for screens between 769px and 1024px */
+}
+
+/* For desktops between 1025px and 1280px */
+@media (1024px < width <= 1280px) {
+  /* Styles for screens between 1025px and 1280px */
+}
+
+/* For larger desktops between 1281px and 1536px */
+@media (1280px < width <= 1536px) {
+  /* Styles for screens between 1281px and 1536px */
+}
+
+/* For extra-large desktops above 1536px */
+@media (width > 1536px) {
+}
