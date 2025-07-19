@@ -108,6 +108,7 @@ input::placeholder {
   margin: 0 auto;
   width: 85%;
   max-width: 1536px;
+  border: 1px solid red;
 }
 
 .w-88 {
@@ -126,15 +127,15 @@ input::placeholder {
   flex-wrap: wrap;
 }
 
-.justify-content-center {
+.justify-center {
   justify-content: center;
 }
 
-.justify-space-between {
+.justify-between {
   justify-content: space-between;
 }
 
-.align-items-center {
+.align-center {
   align-items: center;
 }
 
@@ -144,6 +145,35 @@ input::placeholder {
 
 .section-pad {
   padding: 98px 0;
+}
+
+.d-none {
+  display: none;
+}
+
+.search-box {
+  position: relative;
+  max-width: 500px;
+}
+
+.search-box label {
+  position: absolute;
+  right: 12px;
+  bottom: 30%;
+}
+
+.search-box input {
+  padding: 12px;
+  width: 400px;
+}
+
+nav {
+  gap: 50px;
+}
+
+.menu ul,
+.cart-wishlist {
+  gap: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

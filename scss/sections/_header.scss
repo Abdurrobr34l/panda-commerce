@@ -1,0 +1,20 @@
+.search-box {
+position: relative;
+  max-width: 500px;
+}
+.search-box button {
+  position: absolute;
+  right: 12px;
+  bottom: 30%;
+}
+.search-box input {
+  padding: 12px;
+  width: 400px;
+}
+nav {
+  gap: 50px;
+}
+.menu ul,
+.cart-wishlist {
+  gap: 30px;
+}

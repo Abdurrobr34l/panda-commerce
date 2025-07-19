@@ -16,20 +16,52 @@
 <body>
   <!-- *HEADER START -->
   <header>
-    <div class="container">
+    <div class="container flex justify-between align-center">
+      <!-- *Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="./image/logo.png" alt="It is panda ecommerse website logo image">
+        </a>
+      </div>
 
-      <!-- *Menu -->
-      <nav></nav>
+      <!-- *Search Box -->
+      <div class="search-box">
+        <button type="submit"><i class="fa-solid fa-arrow-right" for="s-box"></i></button>
+        <input type="search" id="s-box" placeholder="Search">
+      </div>
 
-      <!-- *Cart and Wishlist -->
-      <div class="cart-wishlist"></div>
+      <!-- *Menu, Cart and Wishlist -->
+      <nav class="flex align-center">
+
+        <!-- *Menu -->
+        <div class="menu">
+          <ul class="flex align-center">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">TV</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">Shoes</a></li>
+        </ul>
+        </div>
+
+        <!-- *Cart and Wishlist -->
+        <div class="cart-wishlist flex">
+          <a href="#" class="user">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <a href="#" class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+
+      </nav>
 
     </div>
   </header>
   <!-- *HEADER END -->
 
   <!-- *MAIN START -->
-  <main>
+  <main class="d-none">
 
     <!-- *HERO START -->
     <section class="hero">
@@ -65,10 +97,10 @@
   <!-- *MAIN END -->
 
   <!-- *FOOTER START -->
-  <footer></footer>
+  <footer class="d-none"></footer>
   <!-- *FOOTER END -->
 
-
+  <script src="https://kit.fontawesome.com/06208d99b9.js" crossorigin="anonymous"></script>
   <!-- <script src="js/script.js"></script> -->
 </body>
 
