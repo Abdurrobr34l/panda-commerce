@@ -9,6 +9,8 @@
   }
   /* *HEADER START */
   .header {
+    margin: 40px 0 60px;
+
     &__container {
       flex-wrap: nowrap;
       justify-content: space-between;
@@ -26,7 +28,7 @@
 
   /* *CATEGORIES START */
   .categories {
-    margin: 60px 0 50px;
+    padding: 60px 0 50px;
 
     &__boxes {
       grid-template-columns: repeat(2, 1fr);
@@ -64,7 +66,7 @@
 
   /* *CATEGORIES START */
   .categories {
-    margin: 60px 0 50px;
+    padding: 60px 0 50px;
 
     &__boxes {
       grid-template-columns: repeat(3, 1fr);
@@ -139,7 +141,7 @@
 
   /* *CATEGORIES START */
   .categories {
-    margin: 60px 0 50px;
+    padding: 60px 0 50px;
 
     &__boxes {
       grid-template-columns: repeat(3, 1fr);
@@ -153,5 +155,4 @@
 }
 
 /* *EXTRA-LARGE DESKTOP */
-@media (min-width: 1536px) {
-}
+@media (min-width: 1536px) {}

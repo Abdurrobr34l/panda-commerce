@@ -40,3 +40,10 @@ input::placeholder {
 input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
+
+.header,
+.hero,
+.categories,
+.cta {
+  background-color: #ffffff;
+}

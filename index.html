@@ -15,7 +15,7 @@
 
 <body>
   <!-- *HEADER START -->
-  <header class="header d-none">
+  <header class="header">
     <div class="header__container container flex flex-wrap align-center">
       <!-- *Logo -->
       <div class="header__logo">
@@ -66,10 +66,10 @@
   <!-- *HEADER END -->
 
   <!-- *MAIN START -->
-  <main>
+  <main style="background: #f4f4f4;">
 
     <!-- *HERO START -->
-    <section class="hero ">
+    <section class="hero">
       <div class="hero__container container w-88 flex flex-column-reverse align-center">
 
         <div class="hero__contents">
@@ -81,10 +81,10 @@
         </div>
 
         <div class="hero__image">
-        <img src="./image/banner/tv.png" alt="It is an image of TV" class="slide-img img1">
-        <!-- <img src="./image/banner/headphone.png" alt="It is an image of headphone" class="slide-img img2"> -->
-        <!-- <img src="./image/banner/xbox.png" alt="It is an image of xbox" class="slide-img img3"> -->
-      </div>
+          <img src="./image/banner/tv.png" alt="It is an image of TV" class="slide-img img1">
+          <!-- <img src="./image/banner/headphone.png" alt="It is an image of headphone" class="slide-img img2"> -->
+          <!-- <img src="./image/banner/xbox.png" alt="It is an image of xbox" class="slide-img img3"> -->
+        </div>
 
 
       </div>
@@ -98,30 +98,30 @@
 
         <div class="categories__title section-title">
           <h2>Categories</h2>
-        </div> 
+        </div>
 
         <div class="categories__boxes grid">
 
           <!-- ?Box 1 -->
           <a href="watch.html">
             <div class="box flex align-center justify-between">
-            <h2>Watch</h2>
-            <img src="./image/categories/watch.png" alt="It is an watch image">
-          </div>
+              <h2>Watch</h2>
+              <img src="./image/categories/watch.png" alt="It is an watch image">
+            </div>
           </a>
           <!-- ?Box 2 -->
           <a href="bag.html">
             <div class="box flex align-center justify-between">
-            <h2>Bag</h2>
-            <img src="./image/categories/Bag.png" alt="It is an Bag image">
-          </div>
+              <h2>Bag</h2>
+              <img src="./image/categories/Bag.png" alt="It is an Bag image">
+            </div>
           </a>
           <!-- ?Box 3 -->
           <a href="shoes.html">
             <div class="box flex align-center justify-between">
-            <h2>Shoes</h2>
-            <img src="./image/categories/shoes.png" alt="It is an Shoes image">
-          </div>
+              <h2>Shoes</h2>
+              <img src="./image/categories/shoes.png" alt="It is an Shoes image">
+            </div>
           </a>
 
 
@@ -145,7 +145,17 @@
 
     <!-- *CTA START -->
     <section class="cta">
-      <div class="container w-88"></div>
+      <div class="cta__container container w-88 text-center">
+        <h2>LET'S STAY IN TOUCH</h2>
+        <p>Get updates on sales specials and more</p>
+
+        <div class="cta__email">
+          <form class="flex justify-center">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+      </div>
     </section>
     <!-- *CTA END -->
 
@@ -153,7 +163,7 @@
   <!-- *MAIN END -->
 
   <!-- *FOOTER START -->
-  <footer style="padding: 10px 0;" class="d-none">
+  <footer style="padding: 30px 0 10px;">
     <div class="container text-center">
       <p><small>Copyright © 2025 Panda Ecommerse</small></p>
       <p><small>All rights reserved</small></p>
@@ -161,33 +171,7 @@
   </footer>
   <!-- *FOOTER END -->
 
-  <script>
-    const sliderTrack = document.querySelector('.hero__slider-track');
-const slideDuration = 12000; // 12 seconds for full slide
-const slideCount = 4; // total slides (3 + 1 duplicate)
 
-function startSlide() {
-  sliderTrack.style.transition = `transform ${slideDuration}ms linear`;
-  sliderTrack.style.transform = 'translateX(-50%)'; // move left half of track (2 slides width)
-  
-  sliderTrack.addEventListener('transitionend', resetSlide, { once: true });
-}
-
-function resetSlide() {
-  sliderTrack.style.transition = 'none';
-  sliderTrack.style.transform = 'translateX(0)';
-
-  // Force reflow to apply reset immediately
-  void sliderTrack.offsetWidth;
-
-  // Restart animation loop
-  startSlide();
-}
-
-// Kick off the slider animation loop
-startSlide();
-
-  </script>
   <script src="https://kit.fontawesome.com/06208d99b9.js" crossorigin="anonymous"></script>
   <!-- <script src="js/script.js"></script> -->
   <!-- <button type="submit"><i class="fa-solid fa-arrow-right" for="s-box"></i></button> -->

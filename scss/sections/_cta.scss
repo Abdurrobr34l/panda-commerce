@@ -1,0 +1,46 @@
+@import "../base/varibale-font";
+
+.cta {
+  &__container {
+    padding: 146px 0;
+    padding: 80px 20px;
+    background-color: $section-clr-pink;
+    border-radius: 10px;
+
+    h2 {
+      line-height: 30px;
+    }
+
+    p {
+      margin: 8px 0 20px;
+    }
+  }
+
+  &__email {
+    
+    input {
+      flex: 1;
+      padding: 20px;
+      width: 100%;
+      max-width: 520px;
+      border-radius: 10px 0 0 10px;
+    }
+    button {
+      flex: 0;
+      margin-left: -3px;
+      padding: 20px 48px;
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      width: 100%;
+      max-width: 160px;
+      border-radius: 0 10px 10px 0;
+      color: $white-clr;
+    }
+  }
+}
+
+.categories__container {
+  margin: 0 auto;
+  max-width: 1124px;
+}
