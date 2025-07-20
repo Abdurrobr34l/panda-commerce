@@ -15,17 +15,17 @@
 
 <body>
   <!-- *HEADER START -->
-  <header class="d-none">
-    <div class="header-container container flex flex-column flex-wrap justify-between align-center">
+  <header class="header">
+    <div class="header__container container flex flex-wrap align-center">
       <!-- *Logo -->
-      <div class="logo">
+      <div class="header__logo">
         <a href="index.html">
           <img src="./image/logo.png" alt="It is panda ecommerse website logo image">
         </a>
       </div>
 
       <!-- *Search Box -->
-      <div class="search-box">
+      <div class="header__search-box">
         <input type="search" id="s-box" placeholder="Search">
         <button type="submit">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -33,7 +33,7 @@
       </div>
 
       <!-- *Menu, Cart and Wishlist -->
-      <nav class="flex align-center">
+      <nav class="header__nav flex align-center">
 
         <!-- *Menu -->
         <div class="menu">
@@ -47,7 +47,7 @@
         </div>
 
         <!-- *Cart and Wishlist -->
-        <div class="cart-wishlist flex align-center">
+        <div class="header__cart-wishlist flex align-center">
           <a href="#" class="user">
             <i class="fa-solid fa-user"></i>
           </a>
@@ -66,13 +66,31 @@
   <!-- *HEADER END -->
 
   <!-- *MAIN START -->
-  <main class="d-none">
+  <main>
 
     <!-- *HERO START -->
     <section class="hero">
-      <div class="container w-88"></div>
+      <div class="hero__container container w-88 flex flex-column-reverse align-center">
+
+        <div class="hero__contents">
+          <h1>Mi LED TV 4A PRO 32</h1>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          <span>$11289</span>
+          <button class="btn">BUY NOW</button>
+        </div>
+
+        <div class="hero__image">
+        <img src="./image/banner/tv.png" alt="It is an image of TV" class="slide-img img1">
+        <!-- <img src="./image/banner/headphone.png" alt="It is an image of headphone" class="slide-img img2"> -->
+        <!-- <img src="./image/banner/xbox.png" alt="It is an image of xbox" class="slide-img img3"> -->
+      </div>
+
+
+      </div>
     </section>
     <!-- *HERO END -->
+
 
     <!-- *CATEGORIES START -->
     <section class="categories">
@@ -102,7 +120,7 @@
   <!-- *MAIN END -->
 
   <!-- *FOOTER START -->
-  <footer style="padding: 10px 0;">
+  <footer style="padding: 10px 0;" class="d-none">
     <div class="container text-center">
       <p><small>Copyright © 2025 Panda Ecommerse</small></p>
       <p><small>All rights reserved</small></p>
@@ -110,6 +128,33 @@
   </footer>
   <!-- *FOOTER END -->
 
+  <script>
+    const sliderTrack = document.querySelector('.hero__slider-track');
+const slideDuration = 12000; // 12 seconds for full slide
+const slideCount = 4; // total slides (3 + 1 duplicate)
+
+function startSlide() {
+  sliderTrack.style.transition = `transform ${slideDuration}ms linear`;
+  sliderTrack.style.transform = 'translateX(-50%)'; // move left half of track (2 slides width)
+  
+  sliderTrack.addEventListener('transitionend', resetSlide, { once: true });
+}
+
+function resetSlide() {
+  sliderTrack.style.transition = 'none';
+  sliderTrack.style.transform = 'translateX(0)';
+
+  // Force reflow to apply reset immediately
+  void sliderTrack.offsetWidth;
+
+  // Restart animation loop
+  startSlide();
+}
+
+// Kick off the slider animation loop
+startSlide();
+
+  </script>
   <script src="https://kit.fontawesome.com/06208d99b9.js" crossorigin="anonymous"></script>
   <!-- <script src="js/script.js"></script> -->
   <!-- <button type="submit"><i class="fa-solid fa-arrow-right" for="s-box"></i></button> -->

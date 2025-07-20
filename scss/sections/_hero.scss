@@ -1,0 +1,34 @@
+@import "../base/varibale-font";
+
+.hero {
+  &__container {
+    gap: 30px;
+    padding: 40px 0;
+    background: $section-clr-pink;
+  }
+
+  &__contents {
+    padding-left: 20px;
+    width: 100%;
+    max-width: 580px;
+
+    p {
+      margin: 8px 0;
+      font-size: 0.9rem;
+      width: 100%;
+    }
+    span,
+    button {
+      display: block;
+    }
+    span {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: $accent-clr;
+    }
+    button {
+      margin-top: 8px;
+    }
+  }
+
+}

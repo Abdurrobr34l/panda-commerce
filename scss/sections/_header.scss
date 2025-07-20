@@ -1,61 +1,95 @@
 @import "../base/varibale-font";
 
-header {
+.header {
   margin: 30px 0 40px;
-}
-.header-container {
-  gap: 20px 0;
-}
-.logo {
-  width: 100px;
-}
-.search-box {
-  order: 1;
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-}
-.search-box button {
-  position: absolute;
-  right: 30px;
-  bottom: 30%;
-}
-.search-box button i {
-  color: $placeholder-clr;
-}
-.search-box input {
-  padding: 12px 30px;
-  width: 100%;
-  border-radius: 66px;
-  background-color: $input-bg-clr;
-}
-.search-box input:focus {
-  outline: 1px solid $accent-clr;
-}
-nav {
-  gap: 50px;
-}
-nav a {
-  font-family: $font-poppins;
-  font-weight: 500;
-  color: $text-secondary-clr;
-}
-.menu {
-  display: none;
-}
-.menu ul a,
-.cart-wishlist a i {
-  transition: color 0.33s ease-in-out;
-}
-.menu ul a:hover,
-.cart-wishlist a i:hover {
-  color: $accent-clr;
-}
-.menu ul,
-.cart-wishlist {
-  gap: 15px;
-}
-.toggler {
-  font-size: 1.6rem;
-  font-weight: 900;
-}
+
+  &__container {
+    gap: 20px 0;
+    }
+  }
+
+  .header__logo {
+    flex: 1;
+    img {
+      width: 100px;
+    }
+  }
+
+  .header__search-box {
+    order: 1;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+
+    input {
+      padding: 12px 60px;
+      width: 100%;
+      border-radius: 66px;
+      background-color: $input-bg-clr;
+
+      &:focus {
+        outline: 1px solid $accent-clr;
+      }
+    }
+
+    button {
+      position: absolute;
+      right: 30px;
+      bottom: 30%;
+
+      i {
+        color: $placeholder-clr;
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    a {
+      font-family: $font-poppins;
+      font-weight: 500;
+      color: $text-secondary-clr;
+
+      &:hover {
+        color: $accent-clr;
+      }
+    }
+
+    .menu {
+      display: none;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        a {
+          transition: color 0.33s ease-in-out;
+        }
+      }
+    }
+
+    .header__cart-wishlist {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      a {
+        i {
+          transition: color 0.33s ease-in-out;
+
+          &:hover {
+            color: $accent-clr;
+          }
+        }
+      }
+    }
+
+    .toggler {
+      font-size: 1.6rem;
+      font-weight: 900;
+    }
+  }

@@ -8,7 +8,9 @@ h3 {
 }
 
 h1 {
+  font-size: 2.25rem;
   font-weight: 700;
+  line-height: 40px;
 }
 
 h2 {
@@ -32,4 +34,8 @@ p {
 
 input::placeholder {
   color: $placeholder-clr;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
 }

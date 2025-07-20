@@ -1,27 +1,104 @@
-/* For small mobile devices (up to 375px) */
-@media (width <= 375px) {
+/* *MOBILE */
+@media (min-width: 320px) and (max-width: 575.98px) {
 }
 
-/* For mobile devices between 376px and 576px */
-@media (375px < width <= 576px) {
+/* *TABLET */
+@media (min-width: 576px) and (max-width: 1023.98px) {
+  /* *HEADER START */
+  .header {
+    &__container {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    &__logo {
+    flex: none;
+  }
+    &__search-box {
+      order: 0;
+      width: 60%;
+    }
+  }
+  /* *HEADER END */
 }
 
-/* For tablets between 577px and 768px */
-@media (576px < width <= 768px) {
+/* *LAPTOP */
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+  /* *HEADER START */
+  .header {
+    &__container {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    &__logo {
+    flex: none;
+  }
+    &__search-box {
+      order: 0;
+      width: 100%;
+    }
+  }
+  /* *HEADER END */
 }
 
-/* For tablets and small desktops between 769px and 1024px */
-@media (768px < width <= 1024px) {
+/* *DESKTOP */
+@media (min-width: 1280px) {
+  /* *HEADER START */
+  .header {
+    &__container {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    &__logo {
+    flex: none;
+  }
+    &__search-box {
+      order: 0;
+      width: 100%;
+    }
+    &__nav {
+      .menu {
+      display: block;
+    }
+    }
+    &__cart-wishlist {
+      .toggler {
+        display: none;
+      }
+    }
+  }
+  /* *HEADER END */
+
+  /* *HERO START */
+  .hero {
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+      padding: 40px 60px;
+    }
+    &__contents {
+      h1 {
+        font-size: 3.5rem;
+        line-height: 60px;
+      }
+      p {
+        font-size: 1rem;
+        width: 80%;
+      }
+    }
+    &__image {
+      img {
+        height: 400px;
+      }
+    }
+  }
+  /* *HERO END */
 }
 
-/* For desktops between 1025px and 1280px */
-@media (1024px < width <= 1280px) {
-}
-
-/* For larger desktops between 1281px and 1536px */
-@media (1280px < width <= 1536px) {
-}
-
-/* For extra-large desktops above 1536px */
-@media (width > 1536px) {
+/* *EXTRA-LARGE DESKTOP */
+@media (min-width: 1536px) {
 }
