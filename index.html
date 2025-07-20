@@ -16,7 +16,7 @@
 <body>
   <!-- *HEADER START -->
   <header>
-    <div class="container flex justify-between align-center">
+    <div class="header-container container flex flex-column flex-wrap justify-between align-center">
       <!-- *Logo -->
       <div class="logo">
         <a href="index.html">
@@ -26,8 +26,10 @@
 
       <!-- *Search Box -->
       <div class="search-box">
-        <button type="submit"><i class="fa-solid fa-arrow-right" for="s-box"></i></button>
         <input type="search" id="s-box" placeholder="Search">
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </div>
 
       <!-- *Menu, Cart and Wishlist -->
@@ -36,21 +38,24 @@
         <!-- *Menu -->
         <div class="menu">
           <ul class="flex align-center">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">TV</a></li>
-          <li><a href="#">Watch</a></li>
-          <li><a href="#">Shoes</a></li>
-        </ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Shoes</a></li>
+          </ul>
         </div>
 
         <!-- *Cart and Wishlist -->
-        <div class="cart-wishlist flex">
+        <div class="cart-wishlist flex align-center">
           <a href="#" class="user">
             <i class="fa-solid fa-user"></i>
           </a>
           <a href="#" class="cart">
             <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <a href="#" class="toggler">
+            <i class="fa-solid fa-bars"></i>
           </a>
         </div>
 
@@ -102,6 +107,7 @@
 
   <script src="https://kit.fontawesome.com/06208d99b9.js" crossorigin="anonymous"></script>
   <!-- <script src="js/script.js"></script> -->
+  <!-- <button type="submit"><i class="fa-solid fa-arrow-right" for="s-box"></i></button> -->
 </body>
 
 </html>

@@ -4,15 +4,47 @@
 
 /* *TABLET */
 @media (min-width: 576px) and (max-width: 1023.98px) {
-
+  /* *HEADER START */
+  .header-container {
+    flex-wrap: nowrap;
+  }
+  .search-box {
+    order: 0;
+    width: 60%;
+  }
+  /* *HEADER END */
 }
 
 /* *LAPTOP */
 @media (min-width: 1024px) and (max-width: 1279.98px) {
+    /* *HEADER START */
+  .header-container {
+    flex-wrap: nowrap;
+  }
+  .search-box {
+    order: 0;
+    width: 100%;
+  }
+  /* *HEADER END */
 }
 
 /* *DESKTOP */
 @media (min-width: 1280px) {
+    /* *HEADER START */
+  .header-container {
+    flex-wrap: nowrap;
+  }
+  .search-box {
+    order: 0;
+    width: 60%;
+  }
+  .menu {
+  display: block;
+}
+.toggler {
+  display: none;
+}
+  /* *HEADER END */
 }
 
 /* *EXTRA-LARGE DESKTOP */

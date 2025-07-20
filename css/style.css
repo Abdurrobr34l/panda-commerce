@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *,
 *::before,
 *::after {
@@ -27,6 +29,8 @@ a {
 input, button, textarea, select {
   font: inherit;
   color: inherit;
+  border: none;
+  outline: none;
 }
 
 textarea {
@@ -108,7 +112,6 @@ input::placeholder {
   margin: 0 auto;
   width: 85%;
   max-width: 1536px;
-  border: 1px solid red;
 }
 
 .w-88 {
@@ -151,29 +154,78 @@ input::placeholder {
   display: none;
 }
 
+header {
+  margin: 30px 0 40px;
+}
+
+.header-container {
+  gap: 20px 0;
+}
+
+.logo {
+  width: 100px;
+}
+
 .search-box {
+  order: 1;
   position: relative;
+  width: 100%;
   max-width: 500px;
 }
 
-.search-box label {
+.search-box button {
   position: absolute;
-  right: 12px;
+  right: 30px;
   bottom: 30%;
 }
 
+.search-box button i {
+  color: #cccccc;
+}
+
 .search-box input {
-  padding: 12px;
-  width: 400px;
+  padding: 12px 30px;
+  width: 100%;
+  border-radius: 66px;
+  background-color: #f1f1f1;
+}
+
+.search-box input:focus {
+  outline: 1px solid #FF136F;
 }
 
 nav {
   gap: 50px;
 }
 
+nav a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #707070;
+}
+
+.menu {
+  display: none;
+}
+
+.menu ul a,
+.cart-wishlist a i {
+  transition: color 0.33s ease-in-out;
+}
+
+.menu ul a:hover,
+.cart-wishlist a i:hover {
+  color: #FF136F;
+}
+
 .menu ul,
 .cart-wishlist {
-  gap: 30px;
+  gap: 15px;
+}
+
+.toggler {
+  font-size: 1.6rem;
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=style.css.map */

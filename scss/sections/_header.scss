@@ -1,20 +1,61 @@
+@import "../base/varibale-font";
+
+header {
+  margin: 30px 0 40px;
+}
+.header-container {
+  gap: 20px 0;
+}
+.logo {
+  width: 100px;
+}
 .search-box {
-position: relative;
+  order: 1;
+  position: relative;
+  width: 100%;
   max-width: 500px;
 }
 .search-box button {
   position: absolute;
-  right: 12px;
+  right: 30px;
   bottom: 30%;
 }
+.search-box button i {
+  color: $placeholder-clr;
+}
 .search-box input {
-  padding: 12px;
-  width: 400px;
+  padding: 12px 30px;
+  width: 100%;
+  border-radius: 66px;
+  background-color: $input-bg-clr;
+}
+.search-box input:focus {
+  outline: 1px solid $accent-clr;
 }
 nav {
   gap: 50px;
 }
+nav a {
+  font-family: $font-poppins;
+  font-weight: 500;
+  color: $text-secondary-clr;
+}
+.menu {
+  display: none;
+}
+.menu ul a,
+.cart-wishlist a i {
+  transition: color 0.33s ease-in-out;
+}
+.menu ul a:hover,
+.cart-wishlist a i:hover {
+  color: $accent-clr;
+}
 .menu ul,
 .cart-wishlist {
-  gap: 30px;
+  gap: 15px;
+}
+.toggler {
+  font-size: 1.6rem;
+  font-weight: 900;
 }
