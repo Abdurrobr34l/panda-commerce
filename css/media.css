@@ -44,6 +44,12 @@
     padding: 15px 30px;
   }
   /* *CATEGORIES END */
+  
+  /* *CTA START */
+  .cta__email form button {
+    flex: 1;
+  }
+  /* *CTA END */
 }
 /* *LAPTOP */
 @media (min-width: 1024px) and (max-width: 1279.98px) {
@@ -91,6 +97,12 @@
     grid-template-columns: repeat(3, 1fr);
   }
   /* *SHOES END */
+
+    /* *CTA START */
+  .cta__email form button {
+    flex: 1;
+  }
+  /* *CTA END */
 }
 /* *DESKTOP */
 @media (min-width: 1280px) {
@@ -170,5 +182,11 @@
     font-size: 1.5rem;
   }
   /* *SHOES END */
+
+    /* *CTA START */
+  .cta__email form button {
+    flex: 1;
+  }
+  /* *CTA END */
 }
 /* *EXTRA-LARGE DESKTOP */

@@ -26,14 +26,6 @@
   }
   /* *HEADER END */
 
-  /* *SHOES START */
-  .shoes {
-      &__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  }
-  /* *SHOES END */
-
   /* *CATEGORIES START */
   .categories {
     padding: 60px 0 50px;
@@ -47,6 +39,25 @@
     }
   }
   /* *CATEGORIES END */
+
+  /* *SHOES START */
+  .shoes {
+      &__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  }
+  /* *SHOES END */
+
+  /* *CTA START */
+  .cta {
+    &__email {
+    
+    button {
+      flex: 1;
+  }
+}
+  /* *CTA END */
+  }
 }
 
 /* *LAPTOP */
@@ -93,6 +104,17 @@
   }
   }
   /* *SHOES END */
+
+    /* *CTA START */
+  .cta {
+    &__email {
+    
+    button {
+      flex: 1;
+  }
+}
+  /* *CTA END */
+}
 }
 
 /* *DESKTOP */
@@ -182,7 +204,17 @@
   }
   }
   /* *SHOES END */
-}
 
+    /* *CTA START */
+  .cta {
+    &__email {
+    
+    button {
+      flex: 1;
+  }
+}
+  /* *CTA END */
+}
+}
 /* *EXTRA-LARGE DESKTOP */
 @media (min-width: 1536px) {}
