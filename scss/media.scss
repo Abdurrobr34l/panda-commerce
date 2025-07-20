@@ -26,6 +26,14 @@
   }
   /* *HEADER END */
 
+  /* *SHOES START */
+  .shoes {
+      &__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  }
+  /* *SHOES END */
+
   /* *CATEGORIES START */
   .categories {
     padding: 60px 0 50px;
@@ -77,6 +85,14 @@
     }
   }
   /* *CATEGORIES END */
+
+    /* *SHOES START */
+  .shoes {
+      &__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  }
+  /* *SHOES END */
 }
 
 /* *DESKTOP */
@@ -141,7 +157,7 @@
 
   /* *CATEGORIES START */
   .categories {
-    padding: 60px 0 50px;
+    padding: 60px 0 10px;
 
     &__boxes {
       grid-template-columns: repeat(3, 1fr);
@@ -152,6 +168,20 @@
     }
   }
   /* *CATEGORIES END */
+
+    /* *SHOES START */
+  .shoes {
+      &__grid {
+    grid-template-columns: repeat(3, 1fr);
+
+        .shoes-box {
+          h3 {
+            font-size: 1.5rem;
+          }
+        }
+  }
+  }
+  /* *SHOES END */
 }
 
 /* *EXTRA-LARGE DESKTOP */

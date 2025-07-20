@@ -12,5 +12,12 @@
 @import "./sections/header";
 @import "./sections/hero";
 @import "./sections/categories";
-
+@import "./sections/shoes";
 @import "./sections/cta";
+
+main {
+  background: #f4f4f4;
+}
+footer {
+  padding: 30px 0 10px;
+}
